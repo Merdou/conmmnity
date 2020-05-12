@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
-    @GetMapping(value = "/login")
-    public String login(@RequestParam(name = "name")String name, Model model){
-        model.addAttribute("name",name);
+    @GetMapping(value = "/")
+    public String index(){
         return "/view/index";
     }
 }
