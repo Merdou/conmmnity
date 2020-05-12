@@ -1,0 +1,63 @@
+2020-05-12 15:34:35.370  INFO 237972 --- [main] l.manong.community.CommunityApplication  : Starting CommunityApplication on Erdou with PID 237972 (D:\ideaWork\community\target\classes started by Administrator in D:\ideaWork\community)
+2020-05-12 15:34:35.373  INFO 237972 --- [main] l.manong.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-05-12 15:34:35.809 DEBUG 237972 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2020-05-12 15:34:35.809 DEBUG 237972 --- [main] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'life.manong.community'
+2020-05-12 15:34:35.889  WARN 237972 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[life.manong.community]' package. Please check your configuration.
+2020-05-12 15:34:36.253  INFO 237972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-05-12 15:34:36.262  INFO 237972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-12 15:34:36.263  INFO 237972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-12 15:34:36.360  INFO 237972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-12 15:34:36.361  INFO 237972 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 950 ms
+2020-05-12 15:34:36.501  INFO 237972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 15:34:36.598  WARN 237972 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-05-12 15:34:36.599  INFO 237972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 15:34:36.601  INFO 237972 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-12 15:34:36.619  INFO 237972 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-12 15:34:36.625 ERROR 237972 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-05-12 15:48:35.888  INFO 60528 --- [main] l.manong.community.CommunityApplication  : Starting CommunityApplication on Erdou with PID 60528 (D:\ideaWork\community\target\classes started by Administrator in D:\ideaWork\community)
+2020-05-12 15:48:35.893  INFO 60528 --- [main] l.manong.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-05-12 15:48:36.866  INFO 60528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-05-12 15:48:36.876  INFO 60528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-12 15:48:36.876  INFO 60528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-12 15:48:36.967  INFO 60528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-12 15:48:36.968  INFO 60528 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1014 ms
+2020-05-12 15:48:37.110  INFO 60528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 15:48:37.262  INFO 60528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-05-12 15:48:37.265  INFO 60528 --- [main] l.manong.community.CommunityApplication  : Started CommunityApplication in 1.822 seconds (JVM running for 2.953)
+2020-05-12 15:48:58.561  INFO 60528 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 15:48:58.561  INFO 60528 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-12 15:48:58.566  INFO 60528 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-05-12 15:49:10.566  WARN 60528 --- [http-nio-8887-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present]
+2020-05-12 15:52:59.197  INFO 18264 --- [main] l.manong.community.CommunityApplication  : Starting CommunityApplication on Erdou with PID 18264 (D:\ideaWork\community\target\classes started by Administrator in D:\ideaWork\community)
+2020-05-12 15:52:59.201  INFO 18264 --- [main] l.manong.community.CommunityApplication  : No active profile set, falling back to default profiles: default
+2020-05-12 15:53:00.062  INFO 18264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-05-12 15:53:00.072  INFO 18264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-12 15:53:00.072  INFO 18264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-12 15:53:00.169  INFO 18264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-12 15:53:00.170  INFO 18264 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 912 ms
+2020-05-12 15:53:00.366  INFO 18264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 15:53:00.507  INFO 18264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-05-12 15:53:00.510  INFO 18264 --- [main] l.manong.community.CommunityApplication  : Started CommunityApplication in 1.749 seconds (JVM running for 2.995)
+2020-05-12 15:53:03.494  INFO 18264 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 15:53:03.495  INFO 18264 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-12 15:53:03.499  INFO 18264 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
